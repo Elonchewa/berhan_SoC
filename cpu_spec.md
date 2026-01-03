@@ -1,0 +1,15 @@
+- ISA supported
+      - RISC-V
+- Pipeline stages
+      - 4 stages: IF, DEC, EXE, WB
+- Hazard handling (stalls, flushes)
+      - Bypassing from EXE and WB to DEC
+      - Stall logic implemented
+      - Branch prediction is checked in EXE (default assumes PC+4)
+      - PackMul implemented outside of ALU. Multiplication in EXE stage and summing in WB stage
+- Memory
+      - DMC for ICache
+      - Two Way associative Cache for Data Cache
+- Performance:
+      - CPI:
+      - tpd: (due to imporvements for MNSIT image recognition application)
